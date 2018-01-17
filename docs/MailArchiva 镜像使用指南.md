@@ -41,6 +41,10 @@ MAILARCHIVA是一个功能强大，全功能的电子邮件归档（电子邮件
 安装完成，点击login登录
 ![](http://upload-images.jianshu.io/upload_images/3778244-f64c43722ff90430.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/720)
 
+### 镜像已知问题
+
+小内存机器启动的时候可能会比较慢，默认开机自动启动程序，请等待一段时间后重新访问，若一直不能访问请执行`sudo /etc/init.d/mailarchiva restart`命令
+
 ### 镜像使用问题反馈
 
 如果在镜像使用的时候出现任何问题，欢迎加入阿里云市场.云璨群咨询(620676291)
