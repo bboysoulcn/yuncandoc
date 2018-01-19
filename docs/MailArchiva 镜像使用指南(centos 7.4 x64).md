@@ -1,4 +1,4 @@
-# MailArchiva 镜像使用指南
+# MailArchiva 镜像使用指南(centos 7.4 x64)
 
 ### MailArchiva简介
 
