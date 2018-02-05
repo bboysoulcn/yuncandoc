@@ -56,5 +56,10 @@ Nextcloud是ownCloud的衍生版本，是一个开源的网盘解决方案，可
 
 - 20180126 V1.0
 
+### 常见问题
+
+- **上传文件的时候出现`Request Entity Too Large`怎么办**
+这个一般会发生在上传大文件的时候，只要进入宝塔面板，点击软件管理中已安装php版本的设置，再点击配置修改，把upload_max_filesize和post_max_size调大，如果问题还存在那么可以排除是php问题，修改站点nginx的配置文件，即进入宝塔面板之后，点击网站，设置，配置文件，在最后一个括号前加入`client_max_body_size 20m;`后面20m大小根据需求修改
+
 #### 云璨，值得信赖的上云专家！
 #### 云璨官网http://www.yuncan.com/
