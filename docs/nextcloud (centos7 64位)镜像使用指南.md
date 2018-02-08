@@ -1,4 +1,5 @@
-![](http://upload-images.jianshu.io/upload_images/3778244-a7f17a7689cc020e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://upload-images.jianshu.io/upload_images/3778244-21b13624dfedcddb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 # nextcloud (centos7 64位)镜像使用指南
 
