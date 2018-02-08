@@ -1,54 +1,55 @@
-![](http://upload-images.jianshu.io/upload_images/3778244-a7f17a7689cc020e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-# nextcloud (centos7 64位)镜像使用指南
-
-### nextcloud简介
-
-Nextcloud是ownCloud的衍生版本，是一个开源的网盘解决方案，可以很方便得部署在云服务器上使用，同时提供了各个平台的客户端，方便用户同步使用
-
-### nextcloud镜像系统环境介绍
-
-为了方便用户管理云服务器所以在镜像里安装了宝塔面板方便用户对esc进行图形化操作
-
-预装的软件
-
-- nginx 1.12
-- php 5.6
-- 宝塔面板5.5
-- nextcloud 12.0.5
-
-系统更新日期:20180126
-安全组打开下面端口(22|80|8888)
-
-### 宝塔面板相关
-
-- 宝塔面板用户名：Yuncan
-- 宝塔面板密码：Yuncan1803
-- 宝塔面板访问方式：ip+端口8888
-
-### nextcloud相关
-
-- nextcloud数据库：sqlite
-- nextcloud用户名：Yuncan
-- nextcloud密码：Yuncan1803
-- nextcloud数据目录：/www/wwwroot/nextcloud/data
+![](http://upload-images.jianshu.io/upload_images/3778244-78b69d2af134f21d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-### 初始化使用
+# MailArchiva 镜像使用指南(centos 7.4 x64)
 
-安装好镜像之后，如果马上访问网站可能会遇到404的错误，那是因为程序没有启动完成的问题，等待一段时间刷新即可进去
+### MailArchiva简介
 
-![](http://upload-images.jianshu.io/upload_images/3778244-8c2ff3de45344a70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/720)
+MAILARCHIVA是一个功能强大，全功能的电子邮件归档（电子邮件归档）和Microsoft Exchange等邮件系统符合性解决方案。它存储长期贮存所有传入，传出和内部电子邮件。一个基于Web的用户界面
 
-因为配置环境机器和安装镜像机器不是同一ip，所以会出现这个问题，点击添加为信任域名即可
+### MailArchiva镜像系统环境介绍
 
-![](http://upload-images.jianshu.io/upload_images/3778244-bca19fac0dabda5a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+**MailArchiva安装概述**
 
-点击是，之后我们修改nextcloud的账号和密码
+- Max heap size：1583M
+- 版本：5.4.1
 
-![](http://upload-images.jianshu.io/upload_images/3778244-c02f09bf3c19ba9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/720)
+**系统版本介绍**：采用阿里云公共镜像centos7.4 64位
+**系统更新日期**：20180117
 
-点击个人，输入当前密码Yuncan1803，新密码，再点击修改密码即可修改成功
+**管理命令**
+
+- 启动MailArchiva：sudo /etc/init.d/mailarchiva start
+- 重启MailArchiva：sudo /etc/init.d/mailarchiva restart
+- 停止MailArchiva：sudo /etc/init.d/mailarchiva stop
+- 查看MailArchiva运行状态：sudo /etc/init.d/mailarchiva status
+
+**安全组相关**
+
+打开以下端口
+(22|8090|8091)
+
+### 初始化安装指南
+
+为了安全，故本镜像不做初始化的安装
+当安装完本镜像且ECS启动完成之后，在浏览器中使用ip:8090的方式来访问MailArchiva的安装页面
+![](http://upload-images.jianshu.io/upload_images/3778244-e92ecf59c0a0173f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/720)
+点击next是协议界面，点击I Agree to the terms of the above license 之后点击下一步
+![](http://upload-images.jianshu.io/upload_images/3778244-2ba8b1719bd06d46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/720)
+接下来我们设置管理员的密码等一些信息，注意，管理员密码和加密邮件密码是不能一样的，设置好之后点击下一步
+![](http://upload-images.jianshu.io/upload_images/3778244-9cfe6758d2970c2a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/720)
+接着设置一些文件的路径，就像下面这样，接着点击下一步
+![](http://upload-images.jianshu.io/upload_images/3778244-49897adbfb937160.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/720)
+上面我们设置的是应用程序的一些路径，下面我们设置的是数据存储的路径，设置好之后点击下一步
+![](http://upload-images.jianshu.io/upload_images/3778244-0d0587befa87eb0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/720)
+接着来是设置MailArchiva的账号
+![](http://upload-images.jianshu.io/upload_images/3778244-7adfe9197c5c1ea9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/720)
+安装完成，点击login登录
+![](http://upload-images.jianshu.io/upload_images/3778244-f64c43722ff90430.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/720)
+
+### 镜像已知问题
+
+小内存机器启动的时候可能会比较慢，默认开机自动启动程序，请等待一段时间后重新访问，若一直不能访问请执行`sudo /etc/init.d/mailarchiva restart`命令
 
 ### 镜像使用问题反馈
 
@@ -56,12 +57,7 @@ Nextcloud是ownCloud的衍生版本，是一个开源的网盘解决方案，可
 
 ### 版本更新
 
-- 20180126 V1.0
-
-### 常见问题
-
-- **上传文件的时候出现`Request Entity Too Large`怎么办**
-这个一般会发生在上传大文件的时候，只要进入宝塔面板，点击软件管理中已安装php版本的设置，再点击配置修改，把upload_max_filesize和post_max_size调大，如果问题还存在那么可以排除是php问题，修改站点nginx的配置文件，即进入宝塔面板之后，点击网站，设置，配置文件，在最后一个括号前加入`client_max_body_size 20m;`后面20m大小根据需求修改
+- 20180117 V1.0
 
 #### 云璨，值得信赖的上云专家！
 #### 云璨官网http://www.yuncan.com/
