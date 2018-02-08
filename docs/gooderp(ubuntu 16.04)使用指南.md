@@ -1,3 +1,5 @@
+![](http://upload-images.jianshu.io/upload_images/3778244-fc41309975dd0169.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 # gooderp(ubuntu 16.04)使用指南
 
 ### gooderp介绍
@@ -7,7 +9,8 @@ GoodERP 基于 Python 和 Postgresql 技术，是 github 上以 AGPL3 协议开�
 ### 系统环境概述
 
 - 操作系统：ubuntu 16.04 64位 
-- gooderp管理用户名和用户组名：gooderp
+- gooderp管理用户名和用户组名：gooderp，密码：Yuncan1803
+- 数据库用户：gooderp，密码：Yuncan1803，数据库名：gooderp
 - 安装主目录：/home/gooderp
 - 初始化用户邮箱：gooderp@gooderp.com
 - 密码：Yuncan1803
@@ -17,7 +20,7 @@ GoodERP 基于 Python 和 Postgresql 技术，是 github 上以 AGPL3 协议开�
 - gooderp使用教学视频：http://space.bilibili.com/174336503#/channel/index 
 - 官网：http://www.gooderp.org/ 
 
- ### 对gooderp的常用操作
+### 对gooderp的常用操作
 
 默认gooderp开机自启
 
@@ -61,8 +64,8 @@ GoodERP 基于 Python 和 Postgresql 技术，是 github 上以 AGPL3 协议开�
 
 ### 版本更新
 
-V1.0
-V2.0(解决了一些错误，更新系统日期:20180202，优化了系统环境)
+- V1.0
+- V2.0(解决了一些错误，更新系统日期:20180202，优化了系统环境)
 
 ### 云璨你的专属私人服务
 ### 云璨官网：http://www.yuncan.com/ 

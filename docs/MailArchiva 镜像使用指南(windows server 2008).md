@@ -1,3 +1,5 @@
+![](http://upload-images.jianshu.io/upload_images/3778244-78b69d2af134f21d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 # MailArchiva 镜像使用指南(windows server 2008)
 
 ### MailArchiva简介
@@ -7,6 +9,7 @@ MAILARCHIVA是一个功能强大，全功能的电子邮件归档（电子邮件
 ### MailArchiva镜像系统环境介绍
 
 **MailArchiva安装概述**
+
 - 默认账号admin
 - 默认密码：Yuncan1803
 - 加密邮件密码: Yuncan2
@@ -17,6 +20,7 @@ MAILARCHIVA是一个功能强大，全功能的电子邮件归档（电子邮件
 **系统更新日期**：20180119
 
 **安全组相关**
+
 打开以下端口
 (3389|8090)
 
