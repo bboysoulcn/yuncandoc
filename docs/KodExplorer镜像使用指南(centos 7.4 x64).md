@@ -11,7 +11,6 @@ KodExplorer可道云，原名芒果云，是基于Web技术的私有云和在线
 
 - 操作系统: centos 7.4 x64
 - KodExplorer版本：4.35
-- 
 
 ### 镜像推荐ecs配置
 
