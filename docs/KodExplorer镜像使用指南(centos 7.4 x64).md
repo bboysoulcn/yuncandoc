@@ -26,7 +26,18 @@ KodExplorer可道云，原名芒果云，是基于Web技术的私有云和在线
 
 ### 首次使用
 
-首先在浏览器输入你的服务器ip会出现下面这个页面
+因为阿里云镜像的审核问题，不允许出现777权限的文件夹，但是可道云的站点文件需要777权限，所以首次使用的时候需要进入服务器修改站点文件夹的权限。
+
+首先ssh登入服务器中，之后执行
+
+`chmod -Rf  777 /data/wwwroot/kodexplorer`
+
+不然在浏览器访问的时候会出现下面界面
+
+![](https://upload-images.jianshu.io/upload_images/3778244-378b2457f16157c0.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+如果修改完成权限，在浏览器输入你的服务器ip会出现下面这个页面
 
 ![](https://upload-images.jianshu.io/upload_images/3778244-322f9d9d16addd19.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -42,7 +53,7 @@ KodExplorer可道云，原名芒果云，是基于Web技术的私有云和在线
 
 ### 镜像已知问题
 
-- 目前没有欢迎反馈
+- 因为阿里云审核问题导致站点文件夹不能是777权限
 
 ### 镜像使用问题反馈
 
@@ -51,6 +62,7 @@ KodExplorer可道云，原名芒果云，是基于Web技术的私有云和在线
 ### 版本更新
 
 - 20180915: 首个版本
+- 20180927: v1.2 站点权限修改位755
 
 ### 云璨，值得信赖的上云专家！
 
