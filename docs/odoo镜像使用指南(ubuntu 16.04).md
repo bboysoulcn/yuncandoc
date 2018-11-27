@@ -10,7 +10,8 @@ Odoo，是一套企业资源规划及客户关系管理系统。以Python语言�
 
 - 操作系统: ubuntu 16.04
 - odoo版本： 12
-- 登录界面: 直接输入自己的服务器ip
+- 登录界面: ip:8069
+- postgresql版本: 9.5.14
 
 ### 镜像推荐ecs配置
 
@@ -21,12 +22,13 @@ Odoo，是一套企业资源规划及客户关系管理系统。以Python语言�
 
 请打开以下安全组端口
 
-- 80
+- 8069
 - 22
+- 5432
 
 ### 首次使用
 
-在浏览器中输入你的服务器ip，之后就会进入下面这个页面创建数据库
+在浏览器中输入你的服务器ip:8069，之后就会进入下面这个页面创建数据库
 
 ![](https://upload-images.jianshu.io/upload_images/3778244-939657fd46a44084.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
