@@ -9,9 +9,9 @@
 ### 宝塔面板镜像系统环境介绍
 
 - 操作系统: centos 7.4 x64
-- 宝塔面板版本：免费版 5.9.0
-- 登录界面: ip:8888
-- 账号: admin
+- 宝塔面板版本：免费版 6.6.1
+- 登录界面: ip:8888/yuncan
+- 账号: yuncan
 - 密码: Yuncan123
 
 ### 镜像推荐ecs配置
@@ -36,7 +36,7 @@
 
 首次使用请用ip:8888的方式在浏览器中打开访问界面
 
-之后输入默认的账号：admin 密码：Yuncan123登录
+之后输入默认的账号：yuncan 密码：Yuncan123登录
 
 ![](https://upload-images.jianshu.io/upload_images/3778244-a1238fb55bbb8788.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -61,6 +61,7 @@
 ### 版本更新
 
 - 20181029: v1.0首个版本
+- 20181127: v2.0更新版本到6.6.1
 
 ### 云璨，值得信赖的上云专家！
 
