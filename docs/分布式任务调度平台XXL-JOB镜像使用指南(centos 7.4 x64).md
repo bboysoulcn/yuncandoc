@@ -1,4 +1,4 @@
-### 分布式任务调度平台XXL-JOB镜像使用指南(centos 7.4 x64)
+### 分布式任务调度平台XXL-JOB镜像使用指南(centos 7.6 x64)
 
 ![](https://upload-images.jianshu.io/upload_images/3778244-1b935f3722fd6e02.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
