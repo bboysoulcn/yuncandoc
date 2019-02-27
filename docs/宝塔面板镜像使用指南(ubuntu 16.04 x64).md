@@ -1,4 +1,4 @@
-### 宝塔面板镜像使用指南(centos 7.4 x64)
+### 宝塔面板镜像使用指南(ubuntu 16.04x64)
 
 ![](https://upload-images.jianshu.io/upload_images/3778244-b895d759258906a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
